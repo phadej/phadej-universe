@@ -1,0 +1,108 @@
+[submodule "aeson-compat"]
+	path = aeson-compat
+	url = git@github.com:phadej/aeson-compat.git
+[submodule "aeson-extra"]
+	path = aeson-extra
+	url = git@github.com:phadej/aeson-extra.git
+[submodule "binary-orphans"]
+	path = binary-orphans
+	url = git@github.com:phadej/binary-orphans.git
+[submodule "binary-tagged"]
+	path = binary-tagged
+	url = git@github.com:phadej/binary-tagged.git
+[submodule "boring"]
+	path = boring
+	url = git@github.com:phadej/boring.git
+[submodule "vec"]
+	path = vec
+	url = git@github.com:phadej/vec.git
+[submodule "bound-extras"]
+	path = bound-extras
+	url = git@github.com:phadej/bound-extras.git
+[submodule "crypt-sha256"]
+	path = crypt-sha256
+	url = git@github.com:phadej/crypt-sha256.git
+[submodule "dlist-nonempty"]
+	path = dlist-nonempty
+	url = git@github.com:phadej/dlist-nonempty.git
+[submodule "edit-distance"]
+	path = edit-distance
+	url = git@github.com:phadej/edit-distance.git
+[submodule "file-embed-lzma"]
+	path = file-embed-lzma
+	url = git@github.com:phadej/file-embed-lzma.git
+[submodule "functor-classes-compat"]
+	path = functor-classes-compat
+	url = git@github.com:phadej/functor-classes-compat.git
+[submodule "generics-sop-lens"]
+	path = generics-sop-lens
+	url = git@github.com:phadej/generics-sop-lens.git
+[submodule "JuicyPixels-scale-dct"]
+	path = JuicyPixels-scale-dct
+	url = git@github.com:phadej/JuicyPixels-scale-dct.git
+[submodule "kleene"]
+	path = kleene
+	url = git@github.com:phadej/kleene.git
+[submodule "lattices"]
+	path = lattices
+	url = git@github.com:phadej/lattices.git
+[submodule "microstache"]
+	path = microstache
+	url = git@github.com:phadej/microstache.git
+[submodule "OneTuple"]
+	path = OneTuple
+	url = git@github.com:phadej/OneTuple.git
+[submodule "qc-instances"]
+	path = qc-instances
+	url = git@github.com:phadej/qc-instances.git
+[submodule "range-set-list"]
+	path = range-set-list
+	url = git@github.com:phadej/range-set-list.git
+[submodule "regex-applicative-text"]
+	path = regex-applicative-text
+	url = git@github.com:phadej/regex-applicative-text.git
+[submodule "singleton-bool"]
+	path = singleton-bool
+	url = git@github.com:phadej/singleton-bool.git
+[submodule "splitmix"]
+	path = splitmix
+	url = git@github.com:phadej/splitmix.git
+[submodule "step-function"]
+	path = step-function
+	url = git@github.com:jonpetterbergman/step-function.git
+[submodule "time-parsers"]
+	path = time-parsers
+	url = git@github.com:phadej/time-parsers.git
+[submodule "tree-diff"]
+	path = tree-diff
+	url = git@github.com:phadej/tree-diff.git
+[submodule "base64-bytestring-type"]
+	path = base64-bytestring-type
+	url = git@github.com:phadej/base64-bytestring-type.git
+[submodule "tdigest"]
+	path = tdigest
+	url = git@github.com:phadej/tdigest.git
+[submodule "insert-ordered-containers"]
+	path = insert-ordered-containers
+	url = git@github.com:phadej/insert-ordered-containers.git
+[submodule "topograph"]
+	path = topograph
+	url = git@github.com:phadej/topograph.git
+[submodule "assoc"]
+	path = assoc
+	url = git@github.com:phadej/assoc.git
+[submodule "postgresql-libpq"]
+	path = postgresql-libpq
+	url = git@github.com:phadej/postgresql-libpq.git
+[submodule "postgresql-simple"]
+	path = postgresql-simple
+	url = git@github.com:phadej/postgresql-simple.git
+[submodule "postgresql-simple-url"]
+	path = postgresql-simple-url
+	url = git@github.com:phadej/postgresql-simple-url.git
+[submodule "spdx"]
+	path = spdx
+	url = git@github.com:phadej/spdx.git
+[submodule "these"]
+	path = these
+	url = git@github.com:isomorphism/these.git

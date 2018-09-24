@@ -1,0 +1,91 @@
+if impl(ghc >= 7.4)
+  constraints: binary           installed
+  constraints: bytestring       installed
+  constraints: containers       installed
+  constraints: deepseq          installed
+  constraints: directory        installed
+  constraints: filepath         installed
+  constraints: pretty           installed
+  constraints: process          installed
+  constraints: template-haskell installed
+
+  constraints: QuickCheck           >=2.12
+  constraints: lens                 >=4.17
+  constraints: optparse-applicative >=0.14
+  constraints: semigroupoids        >=5.3
+
+  packages:
+    assoc
+    base64-bytestring-type
+    crypt-sha256
+    dlist-nonempty
+    edit-distance
+    functor-classes-compat
+    lattices
+    microstache
+    OneTuple
+    qc-instances
+    regex-applicative-text
+    splitmix
+    these
+
+if impl(ghc >= 7.6)
+  packages:
+    aeson-compat
+    aeson-extra
+    binary-orphans
+    insert-ordered-containers
+    singleton-bool
+    step-function
+    time-parsers
+    topograph
+    postgresql-libpq
+    postgresql-simple
+    postgresql-simple-url
+
+if impl(ghc >= 7.8)
+  constraints: transformers installed
+
+  packages:
+    binary-tagged
+    boring
+    file-embed-lzma
+    generics-sop-lens
+    JuicyPixels-scale-dct
+    kleene
+    range-set-list
+    tdigest/tdigest
+    tree-diff
+    vec/fin
+    vec/vec
+
+if impl(ghc == 7.8.*)
+  -- https://matrix.hackage.haskell.org/#/package/SVGFonts
+  -- todo maybe easier not to test tdigest-Chart on GHC-7.8 :)
+  constraints: SVGFonts <1.6.0.1 || >=1.7
+  constraints: diagrams-core ==1.3.*
+  constraints: diagrams-svg  ==1.4.0.4
+  allow-newer: diagrams-core:lens
+  allow-newer: diagrams-lib:lens
+  allow-newer: diagrams-svg:lens
+  allow-newer: diagrams-lib:optparse-applicative
+  allow-newer: diagrams-svg:optparse-applicative
+  allow-newer: monoid-extras:semigroupoids
+
+if impl(ghc >= 7.8 && <8.5)
+  allow-newer: Chart:lens
+  allow-newer: Chart-diagrams:lens
+  packages:
+    tdigest/tdigest-Chart
+
+
+if impl(ghc >= 8.0)
+  packages:
+    bound-extras
+
+if impl(ghc >= 8.6)
+  allow-newer: JuicyPixels:containers
+  allow-newer: charset:containers
+
+  packages:
+    spdx
