@@ -1,27 +1,29 @@
-constraints: binary           installed
-constraints: bytestring       installed
-constraints: containers       installed
-constraints: deepseq          installed
-constraints: directory        installed
-constraints: filepath         installed
-constraints: pretty           installed
-constraints: process          installed
-constraints: template-haskell installed
-constraints: QuickCheck           >=2.12
-constraints: lens                 >=4.17
-constraints: optparse-applicative >=0.14
-constraints: semigroupoids        >=5.3
-packages: assoc
-          base64-bytestring-type
-          crypt-sha256
-          dlist-nonempty
-          edit-distance
-          functor-classes-compat
-          lattices
-          microstache
-          OneTuple
-          qc-instances
-          regex-applicative-text
-          splitmix
-          these
+constraints:   binary           installed
+constraints:   bytestring       installed
+constraints:   containers       installed
+constraints:   deepseq          installed
+constraints:   directory        installed
+constraints:   filepath         installed
+constraints:   pretty           installed
+constraints:   process          installed
+constraints:   template-haskell installed
+constraints:   QuickCheck           ^>=2.13
+constraints:   lens                 ^>=4.17
+constraints:   optparse-applicative ^>=0.14
+constraints:   semigroupoids        ^>=5.3
+packages:
+    assoc
+    base64-bytestring-type
+    crypt-sha256
+    dlist-nonempty
+    edit-distance
+    functor-classes-compat
+    lattices
+    microstache
+    OneTuple
+    qc-instances
+    regex-applicative-text
+    splitmix
+    these
+
 with-compiler: ghc-7.4.2

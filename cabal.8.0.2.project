@@ -1,54 +1,57 @@
-constraints: binary           installed
-constraints: bytestring       installed
-constraints: containers       installed
-constraints: deepseq          installed
-constraints: directory        installed
-constraints: filepath         installed
-constraints: pretty           installed
-constraints: process          installed
-constraints: template-haskell installed
-constraints: QuickCheck           >=2.12
-constraints: lens                 >=4.17
-constraints: optparse-applicative >=0.14
-constraints: semigroupoids        >=5.3
-packages: assoc
-          base64-bytestring-type
-          crypt-sha256
-          dlist-nonempty
-          edit-distance
-          functor-classes-compat
-          lattices
-          microstache
-          OneTuple
-          qc-instances
-          regex-applicative-text
-          splitmix
-          these
-packages: aeson-compat
-          aeson-extra
-          binary-orphans
-          insert-ordered-containers
-          singleton-bool
-          step-function
-          time-parsers
-          topograph
-          postgresql-libpq
-          postgresql-simple
-          postgresql-simple-url
-constraints: transformers installed
-packages: binary-tagged
-          boring
-          file-embed-lzma
-          generics-sop-lens
-          JuicyPixels-scale-dct
-          kleene
-          range-set-list
-          tdigest/tdigest
-          tree-diff
-          vec/fin
-          vec/vec
-allow-newer: Chart:lens
-allow-newer: Chart-diagrams:lens
-packages: tdigest/tdigest-Chart
-packages: bound-extras
+constraints:   binary           installed
+constraints:   bytestring       installed
+constraints:   containers       installed
+constraints:   deepseq          installed
+constraints:   directory        installed
+constraints:   filepath         installed
+constraints:   pretty           installed
+constraints:   process          installed
+constraints:   template-haskell installed
+constraints:   QuickCheck           ^>=2.13
+constraints:   lens                 ^>=4.17
+constraints:   optparse-applicative ^>=0.14
+constraints:   semigroupoids        ^>=5.3
+packages:
+    assoc
+    base64-bytestring-type
+    crypt-sha256
+    dlist-nonempty
+    edit-distance
+    functor-classes-compat
+    lattices
+    microstache
+    OneTuple
+    qc-instances
+    regex-applicative-text
+    splitmix
+    these
+
+packages:
+    aeson-compat
+    aeson-extra
+    binary-orphans
+    insert-ordered-containers
+    singleton-bool
+    step-function
+    time-parsers
+    topograph
+    postgresql-libpq
+    postgresql-simple
+    postgresql-simple-url
+
+constraints:   transformers installed
+packages:
+    binary-tagged
+    boring
+    file-embed-lzma
+    generics-sop-lens
+    JuicyPixels-scale-dct
+    range-set-list
+    tdigest/tdigest
+    tdigest/tdigest-Chart
+    tree-diff
+    vec/fin
+    vec/vec
+
+packages:      bound-extras
 with-compiler: ghc-8.0.2
