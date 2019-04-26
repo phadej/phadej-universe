@@ -19,9 +19,9 @@
 [submodule "bound-extras"]
 	path = bound-extras
 	url = git@github.com:phadej/bound-extras.git
-[submodule "crypt-sha256"]
-	path = crypt-sha256
-	url = git@github.com:phadej/crypt-sha256.git
+[submodule "crypt-sha512"]
+	path = crypt-sha512
+	url = git@github.com:phadej/crypt-sha512.git
 [submodule "dlist-nonempty"]
 	path = dlist-nonempty
 	url = git@github.com:phadej/dlist-nonempty.git
