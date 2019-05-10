@@ -1,4 +1,5 @@
 if impl(ghc >= 7.4)
+  -- installed
   constraints: binary           installed
   constraints: bytestring       installed
   constraints: containers       installed
@@ -9,13 +10,66 @@ if impl(ghc >= 7.4)
   constraints: process          installed
   constraints: template-haskell installed
 
-  constraints: QuickCheck           ^>=2.13
+   -- uniformly
+  constraints: aeson                ^>=1.4.4.0
+  constraints: hashable             ^>=1.3
+  constraints: intervals            ^>=0.9
   constraints: lens                 ^>=4.17
+  constraints: machines             ^>=0.7
   constraints: optparse-applicative ^>=0.14
+  constraints: QuickCheck           ^>=2.13
   constraints: semigroupoids        ^>=5.3
+  constraints: semigroups           ^>=0.19
+
+  if impl(ghc >=7.8)
+    constraints: profunctors ^>=5.4
+    constraints: constraints ^>=0.11
+
+  if impl(ghc >= 8.0)
+    constraints: generics-sop ^>=0.5
+  if !impl(ghc >= 8.0)
+    constraints: generics-sop ^>=0.3.2
+
+  if impl(ghc >= 7.8)
+    constraints: network ^>=3.1
+  if impl(ghc == 7.6.*)
+    constraints: network ^>=2.7
+  if impl(ghc == 7.4.*)
+    constraints: network ^>=2.6
+
+  if impl(ghc ==7.8.*)
+    constraints: cookie ==0.4.3
+
+  -- head.hackage
+  if impl(ghc >=8.8)
+    allow-newer: lens:hashable
+    allow-newer: trifecta:hashable, trifecta:ansi-terminal
+
+  -- hvr
+  allow-newer: parsec:semigroups
+
+  -- bgamari?
+  allow-newer: cborg:semigroups
+
+  -- timbod7
+  allow-newer: Chart:semigroups
+
+  -- haskell
+  allow-newer: test-framework:semigroups
+
+  -- diagrams
+  allow-newer: active:semigroups
+  allow-newer: diagrams-core:hashable, diagrams-core:semigroups
+  allow-newer: diagrams-lib:hashable, diagrams-lib:semigroups, diagrams-lib:intervals
+  allow-newer: diagrams-postscript:hashable, diagrams-postscript:semigroups
+  allow-newer: diagrams-svg:hashable, diagrams-svg:semigroups
+  allow-newer: monoid-extras:semigroups
+  allow-newer: svg-builder:hashable
+  allow-newer: dual-tree:semigroups
 
   packages:
     assoc
+    binary-orphans
     crypt-sha512
     dlist-nonempty
     edit-distance
@@ -24,14 +78,19 @@ if impl(ghc >= 7.4)
     OneTuple
     qc-instances
     regex-applicative-text
-    splitmix
-    these
+    -- splitmix
+    these/these
+    these/these-lens
+    these/monad-chronicle
+    these/semialign
+    these/semialign-indexed
+    time-compat
 
 if impl(ghc >= 7.6)
   packages:
     aeson-compat
     aeson-extra
-    binary-orphans
+    binary-instances
     insert-ordered-containers
     lattices
     singleton-bool
@@ -52,11 +111,12 @@ if impl(ghc >= 7.8)
     file-embed-lzma
     generics-sop-lens
     JuicyPixels-scale-dct
-    -- kleene
+    kleene
     range-set-list
     tdigest/tdigest
     tdigest/tdigest-Chart
     tree-diff
+    vec/dec
     vec/fin
     vec/vec
 
@@ -97,3 +157,4 @@ if impl(ghc >= 8.8)
   allow-newer: *:template-haskell
   allow-newer: *:time
   allow-newer: *:Cabal
+  allow-newer: *:ghc

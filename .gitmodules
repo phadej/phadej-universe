@@ -106,3 +106,9 @@
 [submodule "these"]
 	path = these
 	url = git@github.com:isomorphism/these.git
+[submodule "binary-instances"]
+	path = binary-instances
+	url = git@github.com:phadej/binary-instances.git
+[submodule "time-compat"]
+	path = time-compat
+	url = git@github.com:phadej/time-compat.git

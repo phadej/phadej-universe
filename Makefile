@@ -123,3 +123,8 @@ test-dry-8.6.5: cabal.8.6.5.project
 	cabal new-build --builddir=dist-newstyle-8.6.5 --project-file cabal.8.6.5.project -w ghc-8.6.5 --enable-tests --enable-benchmarks --dry all
 test-dry-8.8.1: cabal.8.8.1.project
 	cabal new-build --builddir=dist-newstyle-8.8.1 --project-file cabal.8.8.1.project -w ghc-8.8.1 --enable-tests --enable-benchmarks --dry all
+
+FOO=foo bar
+
+foo : 
+	echo $(FOO)

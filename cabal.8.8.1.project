@@ -7,12 +7,40 @@ constraints:   filepath         installed
 constraints:   pretty           installed
 constraints:   process          installed
 constraints:   template-haskell installed
-constraints:   QuickCheck           ^>=2.13
+constraints:   aeson                ^>=1.4.4.0
+constraints:   hashable             ^>=1.3
+constraints:   intervals            ^>=0.9
 constraints:   lens                 ^>=4.17
+constraints:   machines             ^>=0.7
 constraints:   optparse-applicative ^>=0.14
+constraints:   QuickCheck           ^>=2.13
 constraints:   semigroupoids        ^>=5.3
+constraints:   semigroups           ^>=0.19
+constraints:   profunctors ^>=5.4
+constraints:   constraints ^>=0.11
+constraints:   generics-sop ^>=0.5
+constraints:   network ^>=3.1
+allow-newer:   lens:hashable
+allow-newer:   trifecta:hashable, trifecta:ansi-terminal
+allow-newer:   parsec:semigroups
+allow-newer:   cborg:semigroups
+allow-newer:   Chart:semigroups
+allow-newer:   test-framework:semigroups
+allow-newer:   active:semigroups
+allow-newer:   diagrams-core:hashable, diagrams-core:semigroups
+allow-newer:
+    diagrams-lib:hashable, diagrams-lib:semigroups, diagrams-lib:intervals
+
+allow-newer:
+    diagrams-postscript:hashable, diagrams-postscript:semigroups
+
+allow-newer:   diagrams-svg:hashable, diagrams-svg:semigroups
+allow-newer:   monoid-extras:semigroups
+allow-newer:   svg-builder:hashable
+allow-newer:   dual-tree:semigroups
 packages:
     assoc
+    binary-orphans
     crypt-sha512
     dlist-nonempty
     edit-distance
@@ -21,13 +49,17 @@ packages:
     OneTuple
     qc-instances
     regex-applicative-text
-    splitmix
-    these
+    these/these
+    these/these-lens
+    these/monad-chronicle
+    these/semialign
+    these/semialign-indexed
+    time-compat
 
 packages:
     aeson-compat
     aeson-extra
-    binary-orphans
+    binary-instances
     insert-ordered-containers
     lattices
     singleton-bool
@@ -46,10 +78,12 @@ packages:
     file-embed-lzma
     generics-sop-lens
     JuicyPixels-scale-dct
+    kleene
     range-set-list
     tdigest/tdigest
     tdigest/tdigest-Chart
     tree-diff
+    vec/dec
     vec/fin
     vec/vec
 
@@ -72,4 +106,5 @@ allow-newer:   *:base
 allow-newer:   *:template-haskell
 allow-newer:   *:time
 allow-newer:   *:Cabal
+allow-newer:   *:ghc
 with-compiler: ghc-8.8.1
