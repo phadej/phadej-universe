@@ -16,7 +16,7 @@ if impl(ghc >= 7.4)
   constraints: intervals            ^>=0.9
   constraints: lens                 ^>=4.17
   constraints: machines             ^>=0.7
-  constraints: optparse-applicative ^>=0.14
+  constraints: optparse-applicative ^>=0.15
   constraints: QuickCheck           ^>=2.13
   constraints: semigroupoids        ^>=5.3
   constraints: semigroups           ^>=0.19
@@ -47,9 +47,6 @@ if impl(ghc >= 7.4)
 
   -- hvr
   allow-newer: parsec:semigroups
-
-  -- bgamari?
-  allow-newer: cborg:semigroups
 
   -- timbod7
   allow-newer: Chart:semigroups
