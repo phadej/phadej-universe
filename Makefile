@@ -44,31 +44,31 @@ cabal.8.8.1.project: cabal.darkmatter
 	darkmatter
 deps-7.10.3.png: cabal.7.10.3.project
 	cabal new-build --builddir=dist-newstyle-7.10.3 --project-file cabal.7.10.3.project -w ghc-7.10.3 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.10.3 --tred --tred-weights | dot -Tpng -odeps-7.10.3.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.10.3 --tred-weights --tred | dot -Tpng -odeps-7.10.3.png
 deps-7.4.2.png: cabal.7.4.2.project
 	cabal new-build --builddir=dist-newstyle-7.4.2 --project-file cabal.7.4.2.project -w ghc-7.4.2 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.4.2 --tred --tred-weights | dot -Tpng -odeps-7.4.2.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.4.2 --tred-weights --tred | dot -Tpng -odeps-7.4.2.png
 deps-7.6.3.png: cabal.7.6.3.project
 	cabal new-build --builddir=dist-newstyle-7.6.3 --project-file cabal.7.6.3.project -w ghc-7.6.3 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.6.3 --tred --tred-weights | dot -Tpng -odeps-7.6.3.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.6.3 --tred-weights --tred | dot -Tpng -odeps-7.6.3.png
 deps-7.8.4.png: cabal.7.8.4.project
 	cabal new-build --builddir=dist-newstyle-7.8.4 --project-file cabal.7.8.4.project -w ghc-7.8.4 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.8.4 --tred --tred-weights | dot -Tpng -odeps-7.8.4.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-7.8.4 --tred-weights --tred | dot -Tpng -odeps-7.8.4.png
 deps-8.0.2.png: cabal.8.0.2.project
 	cabal new-build --builddir=dist-newstyle-8.0.2 --project-file cabal.8.0.2.project -w ghc-8.0.2 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.0.2 --tred --tred-weights | dot -Tpng -odeps-8.0.2.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.0.2 --tred-weights --tred | dot -Tpng -odeps-8.0.2.png
 deps-8.2.2.png: cabal.8.2.2.project
 	cabal new-build --builddir=dist-newstyle-8.2.2 --project-file cabal.8.2.2.project -w ghc-8.2.2 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.2.2 --tred --tred-weights | dot -Tpng -odeps-8.2.2.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.2.2 --tred-weights --tred | dot -Tpng -odeps-8.2.2.png
 deps-8.4.4.png: cabal.8.4.4.project
 	cabal new-build --builddir=dist-newstyle-8.4.4 --project-file cabal.8.4.4.project -w ghc-8.4.4 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.4.4 --tred --tred-weights | dot -Tpng -odeps-8.4.4.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.4.4 --tred-weights --tred | dot -Tpng -odeps-8.4.4.png
 deps-8.6.5.png: cabal.8.6.5.project
 	cabal new-build --builddir=dist-newstyle-8.6.5 --project-file cabal.8.6.5.project -w ghc-8.6.5 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.6.5 --tred --tred-weights | dot -Tpng -odeps-8.6.5.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.6.5 --tred-weights --tred | dot -Tpng -odeps-8.6.5.png
 deps-8.8.1.png: cabal.8.8.1.project
 	cabal new-build --builddir=dist-newstyle-8.8.1 --project-file cabal.8.8.1.project -w ghc-8.8.1 --disable-tests --disable-benchmarks all --dry-run
-	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.8.1 --tred --tred-weights | dot -Tpng -odeps-8.8.1.png
+	cabal-plan dot --hide-builtin --hide-global --builddir=dist-newstyle-8.8.1 --tred-weights --tred | dot -Tpng -odeps-8.8.1.png
 test-7.10.3: cabal.7.10.3.project test-build-7.10.3
 	cabal new-test --builddir=dist-newstyle-7.10.3 --project-file cabal.7.10.3.project -w ghc-7.10.3 --enable-tests --enable-benchmarks all
 test-7.4.2: cabal.7.4.2.project test-build-7.4.2
