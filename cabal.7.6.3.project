@@ -54,6 +54,8 @@ packages:
 packages:
     aeson-compat
     aeson-extra
+
+packages:
     binary-instances
     insert-ordered-containers
     lattices
