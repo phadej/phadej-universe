@@ -69,6 +69,7 @@ packages:
 
 constraints:   transformers installed
 packages:
+    base64-bytestring-type
     binary-tagged
     boring
     file-embed-lzma

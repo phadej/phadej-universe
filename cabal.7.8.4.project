@@ -71,8 +71,8 @@ packages:
     postgresql-simple-url
 
 constraints:   transformers installed
-packages:      base64-bytestring-type
 packages:
+    base64-bytestring-type
     binary-tagged
     boring
     file-embed-lzma
