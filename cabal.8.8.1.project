@@ -87,8 +87,5 @@ packages:      bound-extras
 allow-newer:   JuicyPixels:containers
 allow-newer:   charset:containers
 packages:      spdx
-allow-newer:   JuicyPixels-scale-dct:base
-allow-newer:   OneTuple:base
-allow-newer:   assoc:base
-allow-newer:   binary-instances:base
+allow-newer:   lzma-0.0.0.3:base
 with-compiler: ghc-8.8.1

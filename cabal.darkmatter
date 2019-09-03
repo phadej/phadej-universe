@@ -153,11 +153,7 @@ if impl(ghc >= 8.6)
     spdx
 
 if impl(ghc >= 8.8)
-  allow-newer: JuicyPixels-scale-dct:base
-  allow-newer: OneTuple:base
-  allow-newer: assoc:base
-  allow-newer: binary-instances:base
-
+  allow-newer: lzma-0.0.0.3:base
 -- if impl(ghc >= 8.8)
 --   repository head.hackage
 --      url: http://ghc.gitlab.haskell.org/head.hackage/
