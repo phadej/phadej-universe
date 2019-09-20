@@ -10,7 +10,7 @@ constraints:   template-haskell installed
 constraints:   aeson                ^>=1.4.4.0
 constraints:   hashable             ^>=1.3
 constraints:   intervals            ^>=0.9
-constraints:   lens                 ^>=4.17
+constraints:   lens                 ^>=4.18.1
 constraints:   machines             ^>=0.7
 constraints:   optparse-applicative ^>=0.15
 constraints:   QuickCheck           ^>=2.13
@@ -22,9 +22,7 @@ constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
 allow-newer:   lens:hashable
 allow-newer:   trifecta:hashable, trifecta:ansi-terminal
-allow-newer:   parsec:semigroups
 allow-newer:   Chart:semigroups
-allow-newer:   test-framework:semigroups
 allow-newer:   active:semigroups
 allow-newer:   diagrams-core:hashable, diagrams-core:semigroups
 allow-newer:
@@ -48,14 +46,19 @@ packages:
     OneTuple
     qc-instances
     regex-applicative-text
-    these/these
-    these/these-lens
+    some
     these/monad-chronicle
     these/semialign
     these/semialign-indexed
+    these/these
+    these/these-lens
     time-compat
+    type-equality
 
+packages:      splitmix
 packages:
+    aeson-compat
+    aeson-extra
     binary-instances
     insert-ordered-containers
     lattices
@@ -69,6 +72,7 @@ packages:
 
 constraints:   transformers installed
 packages:
+    base64-bytestring-type
     binary-tagged
     boring
     file-embed-lzma
@@ -76,8 +80,6 @@ packages:
     JuicyPixels-scale-dct
     kleene
     range-set-list
-    tdigest/tdigest
-    tdigest/tdigest-Chart
     tree-diff
     vec/dec
     vec/fin
@@ -85,10 +87,5 @@ packages:
 
 packages:      bound-extras
 allow-newer:   JuicyPixels:containers
-allow-newer:   charset:containers
 packages:      spdx
-allow-newer:   JuicyPixels-scale-dct:base
-allow-newer:   OneTuple:base
-allow-newer:   assoc:base
-allow-newer:   binary-instances:base
 with-compiler: ghc-8.8.1

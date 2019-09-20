@@ -19,7 +19,7 @@ if impl(ghc >= 7.4)
   constraints: aeson                ^>=1.4.4.0
   constraints: hashable             ^>=1.3
   constraints: intervals            ^>=0.9
-  constraints: lens                 ^>=4.17
+  constraints: lens                 ^>=4.18.1
   constraints: machines             ^>=0.7
   constraints: optparse-applicative ^>=0.15
   constraints: QuickCheck           ^>=2.13
@@ -50,14 +50,8 @@ if impl(ghc >= 7.4)
     allow-newer: lens:hashable
     allow-newer: trifecta:hashable, trifecta:ansi-terminal
 
-  -- hvr
-  allow-newer: parsec:semigroups
-
   -- timbod7
   allow-newer: Chart:semigroups
-
-  -- haskell
-  allow-newer: test-framework:semigroups
 
   -- diagrams
   allow-newer: active:semigroups
@@ -80,21 +74,23 @@ if impl(ghc >= 7.4)
     OneTuple
     qc-instances
     regex-applicative-text
-    -- splitmix
-    these/these
-    these/these-lens
+    some
     these/monad-chronicle
     these/semialign
     these/semialign-indexed
+    these/these
+    these/these-lens
     time-compat
+    type-equality
+
+  -- causes problems with tests/benchmarks
+  packages:
+    splitmix
 
 if impl(ghc >= 7.6)
-  if impl(ghc <8.8)
-    packages:
-      aeson-compat
-      aeson-extra
-
   packages:
+    aeson-compat
+    aeson-extra
     binary-instances
     insert-ordered-containers
     lattices
@@ -111,9 +107,14 @@ if impl(ghc >= 7.8)
 
   if impl(ghc <8.8)
     packages:
-      base64-bytestring-type
+      tdigest/tdigest
+
+    if impl(ghc <7.8 || >= 7.10)
+      packages: tdigest/tdigest-Chart
+      allow-newer: tdigest-Chart:lens
 
   packages:
+    base64-bytestring-type
     binary-tagged
     boring
     file-embed-lzma
@@ -121,25 +122,10 @@ if impl(ghc >= 7.8)
     JuicyPixels-scale-dct
     kleene
     range-set-list
-    tdigest/tdigest
-    tdigest/tdigest-Chart
     tree-diff
     vec/dec
     vec/fin
     vec/vec
-
-if impl(ghc == 7.8.*)
-  -- https://matrix.hackage.haskell.org/#/package/SVGFonts
-  -- todo maybe easier not to test tdigest-Chart on GHC-7.8 :)
-  constraints: SVGFonts <1.6.0.1 || >=1.7
-  constraints: diagrams-core ==1.3.*
-  constraints: diagrams-svg  ==1.4.0.4
-  allow-newer: diagrams-core:lens
-  allow-newer: diagrams-lib:lens
-  allow-newer: diagrams-svg:lens
-  allow-newer: diagrams-lib:optparse-applicative
-  allow-newer: diagrams-svg:optparse-applicative
-  allow-newer: monoid-extras:semigroupoids
 
 if impl(ghc >= 8.0)
   packages:
@@ -147,18 +133,11 @@ if impl(ghc >= 8.0)
 
 if impl(ghc >= 8.6)
   allow-newer: JuicyPixels:containers
-  allow-newer: charset:containers
 
   packages:
     spdx
 
-if impl(ghc >= 8.8)
-  allow-newer: JuicyPixels-scale-dct:base
-  allow-newer: OneTuple:base
-  allow-newer: assoc:base
-  allow-newer: binary-instances:base
-
--- if impl(ghc >= 8.8)
+-- if impl(ghc >= 8.9)
 --   repository head.hackage
 --      url: http://ghc.gitlab.haskell.org/head.hackage/
 --      secure: True

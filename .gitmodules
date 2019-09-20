@@ -112,3 +112,9 @@
 [submodule "time-compat"]
 	path = time-compat
 	url = git@github.com:phadej/time-compat.git
+[submodule "some"]
+	path = some
+	url = git@github.com:phadej/some.git
+[submodule "type-equality"]
+	path = type-equality
+	url = git@github.com:phadej/type-equality.git
