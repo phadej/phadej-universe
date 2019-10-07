@@ -118,3 +118,9 @@
 [submodule "type-equality"]
 	path = type-equality
 	url = git@github.com:phadej/type-equality.git
+[submodule "confusing"]
+	path = confusing
+	url = git@github.com:phadej/confusing.git
+[submodule "months"]
+	path = months
+	url = https://github.com/phadej/months
