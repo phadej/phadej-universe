@@ -89,5 +89,8 @@ packages:
     vec/ral-optics
     vec/vec-optics
 
+packages:      zinza
+packages:      spdx
 allow-newer:   Chart:semigroups
-with-compiler: ghc-8.0.2
+allow-newer:   cryptohash-sha512:base
+with-compiler: ghc-8.10.1

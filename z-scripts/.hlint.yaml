@@ -49,6 +49,10 @@
     - FileEmbedLzma
     - Data.Aeson.Extra.TH
 
+  - name: [InterruptibleFFI]
+    within:
+    - Lukko.Internal.FillBytes
+
   - name: [PatternSynonyms]
     within:
     - Data.DList.NonEmpty
@@ -137,6 +141,11 @@
 - ignore: {name: Use uncurry}
 - ignore: {name: Use list comprehension}
 
+# bifunctors are not everywhere, also increases lazyness.
+- ignore: {name: Use bimap}
+- ignore: {name: Use first}
+- ignore: {name: Use second}
+
 # https://github.com/ndmitchell/hlint/issues/768
 - ignore: {name: Unused LANGUAGE pragma} # TODO
 
@@ -144,8 +153,10 @@
 - ignore: {name: Use zip, within: [Data.Semialign.Internal]} # default definitions in the class
 - ignore: {name: Use newtype instead of data, within: [Data.Tuple.OneTuple]} # Purpose of the module to have **data**
 - ignore: {name: Use fmap, within: [Data.Binary.Orphans]} # TODO
+- ignore: {name: Use fmap} # See TODO below
 - ignore: {name: Use sortOn, within: [Data.HashMap.Strict.InsOrd]} # here sortBy (comparing ..) is faster.
 - ignore: {name: Use camelCase, within: [Graphics.Rendering.Chart.Plot.TDigest]}
+- ignore: {name: Use lambda, within: [Data.Vec.Lazy]}
 
 # Define some custom infix operators
 - fixity: infixl 3 <!>

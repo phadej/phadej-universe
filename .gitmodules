@@ -124,3 +124,12 @@
 [submodule "months"]
 	path = months
 	url = https://github.com/phadej/months
+[submodule "lukko"]
+	path = lukko
+	url = git@github.com:phadej/lukko.git
+[submodule "zinza"]
+	path = zinza
+	url = git@github.com:phadej/zinza.git
+[submodule "rere"]
+	path = rere
+	url = git@github.com:phadej/rere.git
