@@ -21,7 +21,7 @@ constraints:   profunctors ^>=5.4
 constraints:   constraints ^>=0.11
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
-constraints:   aeson                ^>=1.4.7.1
+constraints:   aeson                ^>=1.5.0.0
 packages:
     assoc
     binary-orphans
@@ -80,6 +80,7 @@ packages:
     vec/vec-lens
 
 packages:
+    aeson-optics
     bound-extras
     generics-sop-lens
     insert-ordered-containers

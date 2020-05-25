@@ -22,7 +22,7 @@ constraints:   constraints ^>=0.11
 constraints:   generics-sop ^>=0.3.2
 constraints:   network ^>=3.1
 constraints:   cookie ==0.4.3
-constraints:   aeson                ^>=1.4.7.1
+constraints:   aeson                ^>=1.5.0.0
 packages:
     assoc
     binary-orphans
