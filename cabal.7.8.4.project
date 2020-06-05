@@ -29,6 +29,7 @@ packages:
     crypt-sha512
     dlist-nonempty
     edit-distance
+    fix
     functor-classes-compat
     microstache
     OneTuple
@@ -50,15 +51,16 @@ packages:
     aeson-extra
     binary-instances
     confusing
+    hkd
     lattices
     lukko
+    postgresql-libpq
+    postgresql-simple
+    postgresql-simple-url
     singleton-bool
     step-function
     time-parsers
     topograph
-    postgresql-libpq
-    postgresql-simple
-    postgresql-simple-url
 
 packages:
     base64-bytestring-type

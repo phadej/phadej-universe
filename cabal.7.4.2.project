@@ -25,6 +25,7 @@ packages:
     crypt-sha512
     dlist-nonempty
     edit-distance
+    fix
     functor-classes-compat
     microstache
     OneTuple

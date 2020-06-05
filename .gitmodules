@@ -136,3 +136,9 @@
 [submodule "aeson-optics"]
 	path = aeson-optics
 	url = git@github.com:phadej/aeson-optics.git
+[submodule "fix"]
+	path = fix
+	url = git@github.com:phadej/fix.git
+[submodule "hkd"]
+	path = hkd
+	url = git@github.com:phadej/hkd.git
