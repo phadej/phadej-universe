@@ -95,4 +95,5 @@ packages:
 packages:      zinza
 packages:      spdx
 allow-newer:   Chart:semigroups
-with-compiler: ghc-8.8.3
+allow-newer:   cryptohash-sha512:base
+with-compiler: ghc-8.10.2

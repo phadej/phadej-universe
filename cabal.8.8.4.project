@@ -1,0 +1,98 @@
+constraints:   binary           installed
+constraints:   bytestring       installed
+constraints:   containers       installed
+constraints:   deepseq          installed
+constraints:   directory        installed
+constraints:   filepath         installed
+constraints:   pretty           installed
+constraints:   process          installed
+constraints:   template-haskell installed
+constraints:   transformers installed
+constraints:   hashable             ^>=1.3
+constraints:   intervals            ^>=0.9
+constraints:   lens                 ^>=4.19.1
+constraints:   machines             ^>=0.7
+constraints:   optics               ^>=0.3
+constraints:   optparse-applicative ^>=0.15
+constraints:   QuickCheck           ^>=2.14
+constraints:   semigroupoids        ^>=5.3
+constraints:   semigroups           ^>=0.19
+constraints:   profunctors ^>=5.4
+constraints:   constraints ^>=0.11
+constraints:   generics-sop ^>=0.5
+constraints:   network ^>=3.1
+constraints:   aeson                ^>=1.5.0.0
+packages:
+    assoc
+    binary-orphans
+    crypt-sha512
+    dlist-nonempty
+    edit-distance
+    fix
+    functor-classes-compat
+    microstache
+    OneTuple
+    qc-instances
+    regex-applicative-text
+    rere
+    some
+    these/monad-chronicle
+    these/semialign
+    these/semialign-indexed
+    these/these
+    these/these-lens
+    time-compat
+    type-equality
+
+packages:      splitmix
+packages:
+    aeson-compat
+    aeson-extra
+    binary-instances
+    confusing
+    hkd
+    lattices
+    lukko
+    postgresql-libpq
+    postgresql-simple
+    postgresql-simple-url
+    singleton-bool
+    step-function
+    time-parsers
+    topograph
+
+packages:
+    base64-bytestring-type
+    binary-tagged/binary-tagged
+    binary-tagged/structured
+    boring
+    file-embed-lzma
+    JuicyPixels-scale-dct
+    kleene
+    range-set-list
+    tdigest/tdigest
+    tdigest/tdigest-Chart
+    tree-diff
+    vec/bin
+    vec/dec
+    vec/fin
+    vec/ral
+    vec/ral-lens
+    vec/vec
+    vec/vec-lens
+
+packages:
+    aeson-optics
+    bound-extras
+    generics-sop-lens
+    insert-ordered-containers
+    months
+    these/semialign-optics
+    these/these-optics
+    vec/ral-optics
+    vec/vec-optics
+
+packages:      zinza
+packages:      spdx
+allow-newer:   Chart:semigroups
+with-compiler: ghc-8.8.4
