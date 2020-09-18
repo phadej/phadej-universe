@@ -62,7 +62,6 @@ if impl(ghc >= 7.4)
     crypt-sha512
     dlist-nonempty
     edit-distance
-    fix
     functor-classes-compat
     microstache
     OneTuple
