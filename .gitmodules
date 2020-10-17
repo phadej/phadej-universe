@@ -6,7 +6,7 @@
 	url = git@github.com:phadej/aeson-extra.git
 [submodule "binary-orphans"]
 	path = binary-orphans
-	url = git@github.com:phadej/binary-orphans.git
+	url = git@github.com:haskellari/binary-orphans.git
 [submodule "binary-tagged"]
 	path = binary-tagged
 	url = git@github.com:phadej/binary-tagged.git
@@ -27,13 +27,13 @@
 	url = git@github.com:phadej/dlist-nonempty.git
 [submodule "edit-distance"]
 	path = edit-distance
-	url = git@github.com:phadej/edit-distance.git
+	url = git@github.com:haskellari/edit-distance.git
 [submodule "file-embed-lzma"]
 	path = file-embed-lzma
 	url = git@github.com:phadej/file-embed-lzma.git
 [submodule "functor-classes-compat"]
 	path = functor-classes-compat
-	url = git@github.com:phadej/functor-classes-compat.git
+	url = git@github.com:haskellari/functor-classes-compat.git
 [submodule "generics-sop-lens"]
 	path = generics-sop-lens
 	url = git@github.com:phadej/generics-sop-lens.git
@@ -45,16 +45,16 @@
 	url = git@github.com:phadej/kleene.git
 [submodule "lattices"]
 	path = lattices
-	url = git@github.com:phadej/lattices.git
+	url = git@github.com:haskellari/lattices.git
 [submodule "microstache"]
 	path = microstache
-	url = git@github.com:phadej/microstache.git
+	url = git@github.com:haskellari/microstache.git
 [submodule "OneTuple"]
 	path = OneTuple
-	url = git@github.com:phadej/OneTuple.git
+	url = git@github.com:haskellari/OneTuple.git
 [submodule "qc-instances"]
 	path = qc-instances
-	url = git@github.com:phadej/qc-instances.git
+	url = git@github.com:haskellari/qc-instances.git
 [submodule "range-set-list"]
 	path = range-set-list
 	url = git@github.com:phadej/range-set-list.git
@@ -66,7 +66,7 @@
 	url = git@github.com:phadej/singleton-bool.git
 [submodule "splitmix"]
 	path = splitmix
-	url = git@github.com:phadej/splitmix.git
+	url = git@github.com:haskellari/splitmix.git
 [submodule "step-function"]
 	path = step-function
 	url = git@github.com:jonpetterbergman/step-function.git
@@ -75,7 +75,7 @@
 	url = git@github.com:phadej/time-parsers.git
 [submodule "tree-diff"]
 	path = tree-diff
-	url = git@github.com:phadej/tree-diff.git
+	url = git@github.com:haskellari/tree-diff.git
 [submodule "base64-bytestring-type"]
 	path = base64-bytestring-type
 	url = git@github.com:phadej/base64-bytestring-type.git
@@ -90,13 +90,13 @@
 	url = git@github.com:phadej/topograph.git
 [submodule "assoc"]
 	path = assoc
-	url = git@github.com:phadej/assoc.git
+	url = git@github.com:haskellari/assoc.git
 [submodule "postgresql-libpq"]
 	path = postgresql-libpq
-	url = git@github.com:phadej/postgresql-libpq.git
+	url = git@github.com:haskellari/postgresql-libpq.git
 [submodule "postgresql-simple"]
 	path = postgresql-simple
-	url = git@github.com:phadej/postgresql-simple.git
+	url = git@github.com:haskellari/postgresql-simple.git
 [submodule "postgresql-simple-url"]
 	path = postgresql-simple-url
 	url = git@github.com:phadej/postgresql-simple-url.git
@@ -111,13 +111,13 @@
 	url = git@github.com:phadej/binary-instances.git
 [submodule "time-compat"]
 	path = time-compat
-	url = git@github.com:phadej/time-compat.git
+	url = git@github.com:haskellari/time-compat.git
 [submodule "some"]
 	path = some
-	url = git@github.com:phadej/some.git
+	url = git@github.com:haskellari/some.git
 [submodule "type-equality"]
 	path = type-equality
-	url = git@github.com:phadej/type-equality.git
+	url = git@github.com:hesselink/type-equality.git
 [submodule "confusing"]
 	path = confusing
 	url = git@github.com:phadej/confusing.git
@@ -126,7 +126,7 @@
 	url = git@github.com:phadej/months.git
 [submodule "lukko"]
 	path = lukko
-	url = git@github.com:phadej/lukko.git
+	url = git@github.com:haskellari/lukko.git
 [submodule "zinza"]
 	path = zinza
 	url = git@github.com:phadej/zinza.git
@@ -136,9 +136,6 @@
 [submodule "aeson-optics"]
 	path = aeson-optics
 	url = git@github.com:phadej/aeson-optics.git
-[submodule "fix"]
-	path = fix
-	url = git@github.com:phadej/fix.git
 [submodule "hkd"]
 	path = hkd
 	url = git@github.com:phadej/hkd.git
