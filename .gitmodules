@@ -139,3 +139,6 @@
 [submodule "hkd"]
 	path = hkd
 	url = git@github.com:phadej/hkd.git
+[submodule "indexed-traversable"]
+	path = indexed-traversable
+	url = https://github.com/haskellari/indexed-traversable

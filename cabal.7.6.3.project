@@ -26,6 +26,8 @@ packages:
     dlist-nonempty
     edit-distance
     functor-classes-compat
+    indexed-traversable/indexed-traversable
+    indexed-traversable/indexed-traversable-instances
     microstache
     OneTuple
     qc-instances
