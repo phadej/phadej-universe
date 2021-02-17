@@ -97,6 +97,8 @@ packages:
     these/semialign-indexed
     these/semialign-optics
 
+packages:      spdx
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels:primitive
-with-compiler: ghc-8.2.2
+allow-newer:   cryptohash-sha512:base
+with-compiler: ghc-8.10.4
