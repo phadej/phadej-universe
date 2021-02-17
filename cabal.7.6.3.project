@@ -45,7 +45,6 @@ packages:
 packages:      splitmix
 packages:
     aeson-compat
-    aeson-extra
     binary-instances
     confusing
     hkd

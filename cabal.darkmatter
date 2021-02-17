@@ -33,7 +33,7 @@ if impl(ghc >= 7.4)
   constraints: semigroups           ^>=0.19
 
   if impl(ghc >=7.8)
-    constraints: profunctors ^>=5.4
+    constraints: profunctors ^>=5.6.1
     constraints: constraints ^>=0.11
 
   if impl(ghc >= 8.0)
@@ -86,7 +86,6 @@ if impl(ghc >= 7.4)
 if impl(ghc >= 7.6)
   packages:
     aeson-compat
-    aeson-extra
     binary-instances
     confusing
     hkd
@@ -102,6 +101,7 @@ if impl(ghc >= 7.6)
 
 if impl(ghc >= 7.8)
   packages:
+    aeson-extra
     base64-bytestring-type
     binary-tagged/binary-tagged
     binary-tagged/structured
@@ -149,6 +149,9 @@ if impl(ghc >=7.8)
   -- timbod7
   allow-newer: Chart:semigroups
 
+  -- TODO: probably unsafe.
+  allow-newer: JuicyPixels:primitive
+
 if impl(ghc >= 8.10)
   -- hvr
   allow-newer: cryptohash-sha512:base
@@ -157,7 +160,24 @@ if impl(ghc >= 8.10)
 -- head.hackage
 ------------------------------------------------------------------------
 
--- if impl(ghc >= 8.11)
+if impl(ghc >= 9.0)
+  allow-newer: *:base
+  allow-newer: *:template-haskell
+  allow-newer: *:integer-gmp
+  allow-newer: *:Cabal
+  allow-newer: *:ghc
+  allow-newer: *:ghc-prim
+
+  allow-newer: boring:fin
+  allow-newer: boring:ral
+  allow-newer: boring:vec
+  allow-newer: rere:fin
+  allow-newer: rere:vec
+
+  constraints: network-uri >=0.2.4.0
+
+  packages: /code/local-repo/generics-sop-0.5.1.1.tar.gz
+
 --   repository head.hackage
 --      url: http://ghc.gitlab.haskell.org/head.hackage/
 --      secure: True

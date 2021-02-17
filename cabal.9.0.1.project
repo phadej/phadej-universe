@@ -93,6 +93,22 @@ packages:
     vec/ral-optics
     vec/vec-optics
 
+packages:      zinza
+packages:      spdx
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels:primitive
-with-compiler: ghc-8.0.2
+allow-newer:   cryptohash-sha512:base
+allow-newer:   *:base
+allow-newer:   *:template-haskell
+allow-newer:   *:integer-gmp
+allow-newer:   *:Cabal
+allow-newer:   *:ghc
+allow-newer:   *:ghc-prim
+allow-newer:   boring:fin
+allow-newer:   boring:ral
+allow-newer:   boring:vec
+allow-newer:   rere:fin
+allow-newer:   rere:vec
+constraints:   network-uri >=0.2.4.0
+packages:      /code/local-repo/generics-sop-0.5.1.1.tar.gz
+with-compiler: ghc-9.0.1

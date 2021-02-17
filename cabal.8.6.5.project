@@ -17,7 +17,7 @@ constraints:   optparse-applicative ^>=0.15
 constraints:   QuickCheck           ^>=2.14
 constraints:   semigroupoids        ^>=5.3
 constraints:   semigroups           ^>=0.19
-constraints:   profunctors ^>=5.4
+constraints:   profunctors ^>=5.6.1
 constraints:   constraints ^>=0.11
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
@@ -48,7 +48,6 @@ packages:
 packages:      splitmix
 packages:
     aeson-compat
-    aeson-extra
     binary-instances
     confusing
     hkd
@@ -63,6 +62,7 @@ packages:
     topograph
 
 packages:
+    aeson-extra
     base64-bytestring-type
     binary-tagged/binary-tagged
     binary-tagged/structured
@@ -96,4 +96,5 @@ packages:
 packages:      zinza
 packages:      spdx
 allow-newer:   Chart:semigroups
+allow-newer:   JuicyPixels:primitive
 with-compiler: ghc-8.6.5
