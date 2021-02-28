@@ -142,3 +142,6 @@
 [submodule "indexed-traversable"]
 	path = indexed-traversable
 	url = https://github.com/haskellari/indexed-traversable
+[submodule "generic-lens-lite"]
+	path = generic-lens-lite
+	url = git@github.com:phadej/generic-lens-lite.git

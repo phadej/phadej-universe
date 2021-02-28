@@ -99,4 +99,5 @@ packages:      zinza
 packages:      spdx
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels:primitive
-with-compiler: ghc-8.6.5
+allow-newer:   cryptohash-sha512:base
+with-compiler: ghc-8.10.4

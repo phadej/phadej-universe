@@ -85,6 +85,8 @@ packages:
 packages:
     aeson-optics
     bound-extras
+    generics-lens-lite/generics-lens-lite
+    generics-lens-lite/generics-optics-lite
     generics-sop-lens
     insert-ordered-containers
     months
