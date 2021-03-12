@@ -1,5 +1,5 @@
 #!/bin/sh
-for dir in *; do if [ -d "$dir" ] && [ -f "$dir/.travis.yml" ]; then
+for dir in *; do if [ -d "$dir" ] && [ -f "$dir/.github/workflows/haskell-ci.yml" ]; then
 	echo "=== $dir ==="
 	if [ "$dir" = "edit-distance" ]; then
 		echo "SKIP"
