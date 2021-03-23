@@ -21,7 +21,8 @@ constraints:   profunctors ^>=5.6.1
 constraints:   constraints ^>=0.13
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
-constraints:   aeson                ^>=1.5.0.0
+constraints:   attoparsec           ^>=0.14.1
+constraints:   aeson                ^>=1.5.6.0
 packages:
     assoc
     binary-orphans
