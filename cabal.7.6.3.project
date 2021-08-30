@@ -7,6 +7,7 @@ constraints:   filepath         installed
 constraints:   pretty           installed
 constraints:   process          installed
 constraints:   template-haskell installed
+constraints:   base-compat          ^>=0.12.0
 constraints:   hashable             ^>=1.3
 constraints:   intervals            ^>=0.9
 constraints:   machines             ^>=0.7
@@ -52,7 +53,6 @@ packages:
     postgresql-libpq
     postgresql-simple
     postgresql-simple-url
-    singleton-bool
     step-function
     time-parsers
     topograph
