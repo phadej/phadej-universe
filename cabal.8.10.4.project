@@ -23,16 +23,21 @@ constraints:   constraints ^>=0.13
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
 constraints:   attoparsec           ^>=0.14.1
-constraints:   aeson                ^>=2.0.0.0
+constraints:   aeson                ^>=2.0.1.0
 packages:
     assoc
     binary-orphans
     crypt-sha512
+    cryptohash-md5
+    cryptohash-sha1
+    cryptohash-sha256
+    cryptohash-sha512
     dlist-nonempty
     edit-distance
     functor-classes-compat
     indexed-traversable/indexed-traversable
     indexed-traversable/indexed-traversable-instances
+    lzma
     microstache
     OneTuple
     qc-instances
@@ -74,6 +79,7 @@ packages:
     range-set-list
     singleton-bool
     tdigest/tdigest
+    text-short
     tree-diff
     vec/bin
     vec/dec
@@ -103,5 +109,4 @@ packages:
 packages:      spdx
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels:primitive
-allow-newer:   cryptohash-sha512:base
 with-compiler: ghc-8.10.4

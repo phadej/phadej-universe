@@ -29,11 +29,16 @@ packages:
     assoc
     binary-orphans
     crypt-sha512
+    cryptohash-md5
+    cryptohash-sha1
+    cryptohash-sha256
+    cryptohash-sha512
     dlist-nonempty
     edit-distance
     functor-classes-compat
     indexed-traversable/indexed-traversable
     indexed-traversable/indexed-traversable-instances
+    lzma
     microstache
     OneTuple
     qc-instances
@@ -75,6 +80,7 @@ packages:
     range-set-list
     singleton-bool
     tdigest/tdigest
+    text-short
     tree-diff
     vec/bin
     vec/dec
