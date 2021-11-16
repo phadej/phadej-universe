@@ -111,4 +111,9 @@ packages:
 packages:      spdx
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels:primitive
-with-compiler: ghc-8.8.4
+allow-newer:   cborg:base
+allow-newer:   cborg:ghc-prim
+allow-newer:   serialise:base
+allow-newer:   serialise:ghc-prim
+constraints:   network-uri >=0.2.4.0
+with-compiler: ghc-9.2.1
