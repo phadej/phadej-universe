@@ -41,7 +41,6 @@ packages:
     qc-instances
     regex-applicative-text
     rere
-    some
     these/monad-chronicle
     these/semialign
     these/these

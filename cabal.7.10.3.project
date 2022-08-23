@@ -45,7 +45,6 @@ packages:
     qc-instances
     regex-applicative-text
     rere
-    some
     these/monad-chronicle
     these/semialign
     these/these
@@ -75,7 +74,7 @@ packages:
     binary-tagged/structured
     boring/boring
     boring/boring-instances
-    file-embed-lzma
+    dec
     JuicyPixels-scale-dct
     kleene
     range-set-list
@@ -84,7 +83,6 @@ packages:
     text-short
     tree-diff
     vec/bin
-    vec/dec
     vec/fin
     vec/ral
     vec/ral-lens

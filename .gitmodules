@@ -163,3 +163,6 @@
 [submodule "text-short"]
 	path = text-short
 	url = git@github.com:haskell-hvr/text-short.git
+[submodule "dec"]
+	path = dec
+	url = git@github.com:phadej/dec.git

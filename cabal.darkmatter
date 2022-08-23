@@ -40,7 +40,7 @@ if impl(ghc >= 7.4)
     constraints: hashable ^>=1.3
 
   if impl(ghc >=8)
-    constraints: lens        ^>=5.1
+    constraints: lens        ^>=5.2
   if impl(ghc >=7.8 && <8)
     constraints: lens        ^>=5
   if impl(ghc <7.8)
@@ -72,7 +72,7 @@ if impl(ghc >= 7.4)
 
   if impl(ghc >=8.0)
     constraints: attoparsec           ^>=0.14.1
-    constraints: aeson                ^>=2.0.1.0
+    constraints: aeson                ^>=2.1.0.0
   if impl(ghc <8.0 && >=7.8)
     constraints: attoparsec           ^>=0.14.1
     constraints: aeson                ^>=1.5.6.0
@@ -101,7 +101,6 @@ if impl(ghc >= 7.4)
     qc-instances
     regex-applicative-text
     rere
-    some
     these/monad-chronicle
     these/semialign
     these/these
@@ -136,7 +135,7 @@ if impl(ghc >= 7.8)
     binary-tagged/structured
     boring/boring
     boring/boring-instances
-    file-embed-lzma
+    dec
     JuicyPixels-scale-dct
     kleene
     range-set-list
@@ -145,7 +144,6 @@ if impl(ghc >= 7.8)
     text-short
     tree-diff
     vec/bin
-    vec/dec
     vec/fin
     vec/ral
     vec/ral-lens
@@ -158,8 +156,8 @@ if impl(ghc >= 7.8)
 
 if impl(ghc >= 8.0)
   packages:
-    aeson-optics
     bound-extras
+    file-embed-lzma
     generic-lens-lite/generic-lens-lite
     generic-lens-lite/generic-optics-lite
     generics-sop-lens
@@ -171,11 +169,13 @@ if impl(ghc >= 8.0)
 
 if impl(ghc >= 8.2)
   packages:
+    aeson-optics
     zinza
     these/semialign-indexed
 
 if impl(ghc >= 8.6)
   packages:
+    some
     spdx
 
 ------------------------------------------------------------------------
@@ -202,8 +202,11 @@ if impl(ghc >= 9.0)
 --   allow-newer: serialise:ghc-prim
 
 if impl(ghc >= 9.2)
-  allow-newer: carray-0.1.6.8:bytestring
+--  allow-newer: carray-0.1.6.8:bytestring
 
+
+if impl(ghc >= 9.4)
+--  allow-newer: recursion-schemes:template-haskell
 
 --   repository head.hackage
 --      url: http://ghc.gitlab.haskell.org/head.hackage/

@@ -18,14 +18,14 @@ constraints:   semigroupoids        ^>=5.3
 constraints:   semigroups           ^>=0.20
 constraints:   transformers-compat  ^>=0.7.1
 constraints:   hashable ^>=1.4
-constraints:   lens        ^>=5.1
+constraints:   lens        ^>=5.2
 constraints:   profunctors ^>=5.6.1
 constraints:   constraints ^>=0.13
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
 constraints:   optics ^>=0.3
 constraints:   attoparsec           ^>=0.14.1
-constraints:   aeson                ^>=2.0.1.0
+constraints:   aeson                ^>=2.1.0.0
 packages:
     assoc
     binary-orphans
@@ -45,7 +45,6 @@ packages:
     qc-instances
     regex-applicative-text
     rere
-    some
     these/monad-chronicle
     these/semialign
     these/these
@@ -75,7 +74,7 @@ packages:
     binary-tagged/structured
     boring/boring
     boring/boring-instances
-    file-embed-lzma
+    dec
     JuicyPixels-scale-dct
     kleene
     range-set-list
@@ -84,7 +83,6 @@ packages:
     text-short
     tree-diff
     vec/bin
-    vec/dec
     vec/fin
     vec/ral
     vec/ral-lens
@@ -92,8 +90,8 @@ packages:
     vec/vec-lens
 
 packages:
-    aeson-optics
     bound-extras
+    file-embed-lzma
     generic-lens-lite/generic-lens-lite
     generic-lens-lite/generic-optics-lite
     generics-sop-lens
