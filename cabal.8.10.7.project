@@ -25,8 +25,7 @@ constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
 constraints:   optics ^>=0.4
 constraints:   attoparsec           ^>=0.14.1
-constraints:   aeson                ^>=2.0.1.0
-constraints:   network-uri >=0.2.4.0
+constraints:   aeson                ^>=2.1.0.0
 packages:
     assoc
     binary-orphans
@@ -76,7 +75,7 @@ packages:
     binary-tagged/structured
     boring/boring
     boring/boring-instances
-    file-embed-lzma
+    dec
     JuicyPixels-scale-dct
     kleene
     range-set-list
@@ -85,7 +84,6 @@ packages:
     text-short
     tree-diff
     vec/bin
-    vec/dec
     vec/fin
     vec/ral
     vec/ral-lens
@@ -93,8 +91,8 @@ packages:
     vec/vec-lens
 
 packages:
-    aeson-optics
     bound-extras
+    file-embed-lzma
     generic-lens-lite/generic-lens-lite
     generic-lens-lite/generic-optics-lite
     generics-sop-lens
@@ -105,11 +103,11 @@ packages:
     vec/vec-optics
 
 packages:
+    aeson-optics
     zinza
     these/semialign-indexed
 
 packages:      spdx
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels:primitive
-allow-newer:   carray-0.1.6.8:bytestring
-with-compiler: ghc-9.2.1
+with-compiler: ghc-8.10.7
