@@ -60,7 +60,6 @@ packages:
     hkd
     lattices
     lukko
-    postgresql-libpq
     postgresql-simple
     postgresql-simple-url
     step-function
@@ -107,6 +106,8 @@ packages:
     these/semialign-indexed
 
 packages:
+    postgresql-libpq
+    skew-list
     some
     spdx
 

@@ -61,7 +61,6 @@ packages:
     hkd
     lattices
     lukko
-    postgresql-libpq
     postgresql-simple
     postgresql-simple-url
     step-function
@@ -108,9 +107,12 @@ packages:
     these/semialign-indexed
 
 packages:
+    postgresql-libpq
+    skew-list
     some
     spdx
 
+packages:      th-letrec
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels:primitive
 with-compiler: ghc-9.2.5

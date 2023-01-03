@@ -56,7 +56,6 @@ packages:
     hkd
     lattices
     lukko
-    postgresql-libpq
     postgresql-simple
     postgresql-simple-url
     step-function

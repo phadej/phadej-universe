@@ -166,3 +166,9 @@
 [submodule "dec"]
 	path = dec
 	url = git@github.com:phadej/dec.git
+[submodule "skew-list"]
+	path = skew-list
+	url = git@github.com:phadej/skew-list.git
+[submodule "th-letrec"]
+	path = th-letrec
+	url = git@github.com:phadej/th-letrec.git

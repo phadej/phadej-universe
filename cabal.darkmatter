@@ -120,7 +120,6 @@ if impl(ghc >= 7.6)
     hkd
     lattices
     lukko
-    postgresql-libpq
     postgresql-simple
     postgresql-simple-url
     step-function
@@ -175,8 +174,14 @@ if impl(ghc >= 8.2)
 
 if impl(ghc >= 8.6)
   packages:
+    postgresql-libpq
+    skew-list
     some
     spdx
+
+if impl(ghc >=9.0)
+  packages:
+    th-letrec
 
 ------------------------------------------------------------------------
 -- allow newer
@@ -188,7 +193,6 @@ if impl(ghc >=7.8)
 
   -- TODO: probably unsafe.
   allow-newer: JuicyPixels:primitive
-
 
 ------------------------------------------------------------------------
 -- head.hackage
