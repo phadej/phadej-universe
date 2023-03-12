@@ -1,6 +1,3 @@
-[submodule "aeson-compat"]
-	path = aeson-compat
-	url = git@github.com:phadej/aeson-compat.git
 [submodule "aeson-extra"]
 	path = aeson-extra
 	url = git@github.com:phadej/aeson-extra.git

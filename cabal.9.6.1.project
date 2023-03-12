@@ -26,6 +26,7 @@ constraints:   network ^>=3.1
 constraints:   optics ^>=0.4
 constraints:   attoparsec           ^>=0.14.1
 constraints:   aeson                ^>=2.1.0.0
+constraints:   network-uri >=0.2.4.0
 packages:
     assoc
     binary-orphans
@@ -104,5 +105,12 @@ packages:
     zinza
     these/semialign-indexed
 
+packages:
+    postgresql-libpq
+    skew-list
+    some
+    spdx
+
+packages:      th-letrec
 allow-newer:   Chart:semigroups
-with-compiler: ghc-8.2.2
+with-compiler: ghc-9.6.1

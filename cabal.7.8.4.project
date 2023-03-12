@@ -1,4 +1,4 @@
-allow-newer:   attoparsec-0.14.2:semigroups
+allow-newer:   foldable1-classes-compat:semigroups
 constraints:   binary           installed
 constraints:   bytestring       installed
 constraints:   containers       installed
@@ -9,14 +9,14 @@ constraints:   pretty           installed
 constraints:   process          installed
 constraints:   template-haskell installed
 constraints:   transformers installed
-constraints:   base-compat          ^>=0.12.1
+constraints:   base-compat          ^>=0.13.0
 constraints:   intervals            ^>=0.9
 constraints:   machines             ^>=0.7
-constraints:   optparse-applicative ^>=0.16.1.0
+constraints:   optparse-applicative ^>=0.17.0.0
 constraints:   QuickCheck           ^>=2.14
-constraints:   semigroupoids        ^>=5.3
 constraints:   semigroups           ^>=0.20
 constraints:   transformers-compat  ^>=0.7.1
+constraints:   semigroupoids        ^>=5.3
 constraints:   hashable ^>=1.3
 constraints:   lens        ^>=5
 constraints:   profunctors ^>=5.6.1
@@ -55,7 +55,6 @@ packages:
 
 packages:      splitmix
 packages:
-    aeson-compat
     binary-instances
     confusing
     hkd
@@ -90,5 +89,4 @@ packages:
     vec/vec-lens
 
 allow-newer:   Chart:semigroups
-allow-newer:   JuicyPixels:primitive
 with-compiler: ghc-7.8.4
