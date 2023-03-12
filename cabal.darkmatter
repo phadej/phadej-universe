@@ -1,12 +1,11 @@
 makefile:
   git-update:
-    git submodule foreach git checkout master
-    git submodule foreach git pull
-
+  	git submodule foreach git checkout master
+  	git submodule foreach git pull
   cabal-deps:
-    cabal-deps */*.cabal */*/*.cabal
+  	cabal-deps */*.cabal */*/*.cabal
 
-if impl(ghc >= 7.4)
+if impl(ghc >=7.4)
   -- https://github.com/haskell-compat/foldable1-classes-compat/issues/21
   allow-newer: foldable1-classes-compat:semigroups
 
@@ -21,10 +20,10 @@ if impl(ghc >= 7.4)
   constraints: process          installed
   constraints: template-haskell installed
 
-  if impl(ghc >= 7.8)
+  if impl(ghc >=7.8)
     constraints: transformers installed
 
-   -- uniformly
+  -- uniformly
   constraints: base-compat          ^>=0.13.0
   constraints: intervals            ^>=0.9
   constraints: machines             ^>=0.7
@@ -38,13 +37,16 @@ if impl(ghc >= 7.4)
 
   if impl(ghc >=8)
     constraints: hashable ^>=1.4
+
   if impl(ghc <8)
     constraints: hashable ^>=1.3
 
   if impl(ghc >=8)
     constraints: lens        ^>=5.2
+
   if impl(ghc >=7.8 && <8)
     constraints: lens        ^>=5
+
   if impl(ghc <7.8)
     constraints: lens        ^>=4.19.2
 
@@ -52,32 +54,38 @@ if impl(ghc >= 7.4)
     constraints: profunctors ^>=5.6.1
     constraints: constraints ^>=0.13
 
-  if impl(ghc >= 8.0)
+  if impl(ghc >=8.0)
     constraints: generics-sop ^>=0.5
-  if !impl(ghc >= 8.0)
+
+  if !impl(ghc >=8.0)
     constraints: generics-sop ^>=0.3.2
 
-  if impl(ghc >= 7.8)
+  if impl(ghc >=7.8)
     constraints: network ^>=3.1
-  if impl(ghc == 7.6.*)
+
+  if impl(ghc >=7.6 && <7.7)
     constraints: network ^>=2.7
-  if impl(ghc == 7.4.*)
+
+  if impl(ghc >=7.4 && <7.5)
     constraints: network ^>=2.6
 
   if impl(ghc >=8.2)
     constraints: optics ^>=0.4
+
   if !impl(ghc >=8.2)
     constraints: optics ^>=0.3
 
-  if impl(ghc ==7.8.*)
+  if impl(ghc >=7.8 && <7.9)
     constraints: cookie ==0.4.3
 
   if impl(ghc >=8.0)
     constraints: attoparsec           ^>=0.14.1
     constraints: aeson                ^>=2.1.0.0
+
   if impl(ghc <8.0 && >=7.8)
     constraints: attoparsec           ^>=0.14.1
     constraints: aeson                ^>=1.5.6.0
+
   if impl(ghc <7.8)
     constraints: aeson                ^>=1.4.6.0
 
@@ -103,6 +111,7 @@ if impl(ghc >= 7.4)
     qc-instances
     regex-applicative-text
     rere
+    regression-simple
     these/monad-chronicle
     these/semialign
     these/these
@@ -113,10 +122,9 @@ if impl(ghc >= 7.4)
   -- TODO: Add regression-simple
 
   -- causes problems with tests/benchmarks
-  packages:
-    splitmix
+  packages:    splitmix
 
-if impl(ghc >= 7.6)
+if impl(ghc >=7.6)
   packages:
     binary-instances
     confusing
@@ -129,7 +137,7 @@ if impl(ghc >= 7.6)
     time-parsers
     topograph
 
-if impl(ghc >= 7.8)
+if impl(ghc >=7.8)
   packages:
     aeson-extra
     base64-bytestring-type
@@ -152,11 +160,11 @@ if impl(ghc >= 7.8)
     vec/vec
     vec/vec-lens
 
-  -- diagrams :(
-  -- packages:
-  --   tdigest/tdigest-Chart
+-- diagrams :(
+-- packages:
+--   tdigest/tdigest-Chart
 
-if impl(ghc >= 8.0)
+if impl(ghc >=8.0)
   packages:
     bound-extras
     file-embed-lzma
@@ -169,13 +177,13 @@ if impl(ghc >= 8.0)
     vec/ral-optics
     vec/vec-optics
 
-if impl(ghc >= 8.2)
+if impl(ghc >=8.2)
   packages:
     aeson-optics
     zinza
     these/semialign-indexed
 
-if impl(ghc >= 8.6)
+if impl(ghc >=8.6)
   packages:
     postgresql-libpq
     skew-list
@@ -183,8 +191,7 @@ if impl(ghc >= 8.6)
     spdx
 
 if impl(ghc >=9.0)
-  packages:
-    th-letrec
+  packages: th-letrec
 
 ------------------------------------------------------------------------
 -- allow newer
@@ -194,12 +201,12 @@ if impl(ghc >=7.8)
   -- timbod7
   allow-newer: Chart:semigroups
 
-
 ------------------------------------------------------------------------
 -- head.hackage
 ------------------------------------------------------------------------
 
-if impl(ghc >= 9.4)
+if impl(ghc >=9.4)
+
 --  allow-newer: recursion-schemes:template-haskell
 
 --   repository head.hackage

@@ -45,6 +45,7 @@ packages:
     qc-instances
     regex-applicative-text
     rere
+    regression-simple
     these/monad-chronicle
     these/semialign
     these/these

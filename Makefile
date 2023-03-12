@@ -191,6 +191,5 @@ test-dry-9.6.1: cabal.9.6.1.project
 git-update:
 	git submodule foreach git checkout master
 	git submodule foreach git pull
-
 cabal-deps:
 	cabal-deps */*.cabal */*/*.cabal

@@ -169,3 +169,6 @@
 [submodule "th-letrec"]
 	path = th-letrec
 	url = git@github.com:phadej/th-letrec.git
+[submodule "regression-simple"]
+	path = regression-simple
+	url = git@github.com:phadej/regression-simple.git
