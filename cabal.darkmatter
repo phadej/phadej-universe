@@ -1,15 +1,11 @@
 makefile:
   git-update:
-    git submodule foreach git checkout master
-    git submodule foreach git pull
-
+  	git submodule foreach git checkout master
+  	git submodule foreach git pull
   cabal-deps:
-    cabal-deps */*.cabal */*/*.cabal
+  	cabal-deps */*.cabal */*/*.cabal
 
-if impl(ghc >= 7.4)
-  -- https://github.com/haskell/attoparsec/pull/192
-  allow-newer: attoparsec-0.14.2:semigroups
-
+if impl(ghc >=7.4)
   -- installed
   constraints: binary           installed
   constraints: bytestring       installed
@@ -21,28 +17,36 @@ if impl(ghc >= 7.4)
   constraints: process          installed
   constraints: template-haskell installed
 
-  if impl(ghc >= 7.8)
+  if impl(ghc >=7.8)
     constraints: transformers installed
 
-   -- uniformly
-  constraints: base-compat          ^>=0.12.1
+  -- uniformly
+  constraints: base-compat          ^>=0.13.0
   constraints: intervals            ^>=0.9
   constraints: machines             ^>=0.7
-  constraints: optparse-applicative ^>=0.16.1.0
+  constraints: optparse-applicative ^>=0.17.0.0
   constraints: QuickCheck           ^>=2.14
-  constraints: semigroupoids        ^>=5.3
   constraints: semigroups           ^>=0.20
   constraints: transformers-compat  ^>=0.7.1
 
+  -- TODO: going to change
+  if impl(ghc >=8)
+    constraints: semigroupoids        ^>=6
+  if !impl(ghc >=8)
+    constraints: semigroupoids        ^>=5.3
+
   if impl(ghc >=8)
     constraints: hashable ^>=1.4
+
   if impl(ghc <8)
     constraints: hashable ^>=1.3
 
   if impl(ghc >=8)
-    constraints: lens        ^>=5.2
+    constraints: lens        ^>=5.2.1
+
   if impl(ghc >=7.8 && <8)
     constraints: lens        ^>=5
+
   if impl(ghc <7.8)
     constraints: lens        ^>=4.19.2
 
@@ -50,32 +54,38 @@ if impl(ghc >= 7.4)
     constraints: profunctors ^>=5.6.1
     constraints: constraints ^>=0.13
 
-  if impl(ghc >= 8.0)
+  if impl(ghc >=8.0)
     constraints: generics-sop ^>=0.5
-  if !impl(ghc >= 8.0)
+
+  if !impl(ghc >=8.0)
     constraints: generics-sop ^>=0.3.2
 
-  if impl(ghc >= 7.8)
+  if impl(ghc >=7.8)
     constraints: network ^>=3.1
-  if impl(ghc == 7.6.*)
+
+  if impl(ghc >=7.6 && <7.7)
     constraints: network ^>=2.7
-  if impl(ghc == 7.4.*)
+
+  if impl(ghc >=7.4 && <7.5)
     constraints: network ^>=2.6
 
   if impl(ghc >=8.2)
     constraints: optics ^>=0.4
+
   if !impl(ghc >=8.2)
     constraints: optics ^>=0.3
 
-  if impl(ghc ==7.8.*)
+  if impl(ghc >=7.8 && <7.9)
     constraints: cookie ==0.4.3
 
   if impl(ghc >=8.0)
     constraints: attoparsec           ^>=0.14.1
     constraints: aeson                ^>=2.1.0.0
+
   if impl(ghc <8.0 && >=7.8)
     constraints: attoparsec           ^>=0.14.1
     constraints: aeson                ^>=1.5.6.0
+
   if impl(ghc <7.8)
     constraints: aeson                ^>=1.4.6.0
 
@@ -99,22 +109,22 @@ if impl(ghc >= 7.4)
     microstache
     OneTuple
     qc-instances
-    regex-applicative-text
     rere
+    regression-simple
     these/monad-chronicle
     these/semialign
     these/these
-    these/these-lens
     time-compat
     type-equality
 
-  -- causes problems with tests/benchmarks
-  packages:
-    splitmix
+  -- TODO: I don't like the dependency footprint of regex-applicative
+  -- regex-applicative-text
 
-if impl(ghc >= 7.6)
+  -- causes problems with tests/benchmarks
+  packages:    splitmix
+
+if impl(ghc >=7.6)
   packages:
-    aeson-compat
     binary-instances
     confusing
     hkd
@@ -126,14 +136,13 @@ if impl(ghc >= 7.6)
     time-parsers
     topograph
 
-if impl(ghc >= 7.8)
+if impl(ghc >=7.8)
   packages:
     aeson-extra
-    base64-bytestring-type
     binary-tagged/binary-tagged
     binary-tagged/structured
     boring/boring
-    boring/boring-instances
+    -- boring/boring-instances
     dec
     JuicyPixels-scale-dct
     kleene
@@ -149,12 +158,13 @@ if impl(ghc >= 7.8)
     vec/vec
     vec/vec-lens
 
-  -- diagrams :(
-  -- packages:
-  --   tdigest/tdigest-Chart
+-- diagrams :(
+-- packages:
+--   tdigest/tdigest-Chart
 
-if impl(ghc >= 8.0)
+if impl(ghc >=8.0)
   packages:
+    base64-bytestring-type
     bound-extras
     file-embed-lzma
     generic-lens-lite/generic-lens-lite
@@ -162,17 +172,18 @@ if impl(ghc >= 8.0)
     generics-sop-lens
     insert-ordered-containers
     months
+    these/these-lens
     these/these-optics
     vec/ral-optics
     vec/vec-optics
 
-if impl(ghc >= 8.2)
+if impl(ghc >=8.2)
   packages:
     aeson-optics
     zinza
     these/semialign-indexed
 
-if impl(ghc >= 8.6)
+if impl(ghc >=8.6)
   packages:
     postgresql-libpq
     skew-list
@@ -180,8 +191,7 @@ if impl(ghc >= 8.6)
     spdx
 
 if impl(ghc >=9.0)
-  packages:
-    th-letrec
+  packages: th-letrec
 
 ------------------------------------------------------------------------
 -- allow newer
@@ -190,26 +200,25 @@ if impl(ghc >=9.0)
 if impl(ghc >=7.8)
   -- timbod7
   allow-newer: Chart:semigroups
+  allow-newer: JuicyPixels-3.2.8.3:primitive
+  allow-newer: JuicyPixels-3.2.8.3:vector
 
-  -- TODO: probably unsafe.
-  allow-newer: JuicyPixels:primitive
+if impl(ghc >=7.8 && <8.0)
+  allow-newer: lens:assoc
+  allow-newer: lens:strict
+  allow-newer: lens:these
+
+if impl(ghc >=9.6)
+  allow-newer: recursion-schemes:template-haskell
+  allow-newer: cryptohash-sha512:base
+  allow-newer: fft:transformers
 
 ------------------------------------------------------------------------
 -- head.hackage
 ------------------------------------------------------------------------
 
-if impl(ghc >= 9.0)
+if impl(ghc >=9.6)
 
---   allow-newer: cborg:base
---   allow-newer: cborg:ghc-prim
---   allow-newer: serialise:base
---   allow-newer: serialise:ghc-prim
-
-if impl(ghc >= 9.2)
---  allow-newer: carray-0.1.6.8:bytestring
-
-
-if impl(ghc >= 9.4)
 --  allow-newer: recursion-schemes:template-haskell
 
 --   repository head.hackage

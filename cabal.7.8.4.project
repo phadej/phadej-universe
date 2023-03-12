@@ -1,4 +1,3 @@
-allow-newer:   attoparsec-0.14.2:semigroups
 constraints:   binary           installed
 constraints:   bytestring       installed
 constraints:   containers       installed
@@ -9,14 +8,14 @@ constraints:   pretty           installed
 constraints:   process          installed
 constraints:   template-haskell installed
 constraints:   transformers installed
-constraints:   base-compat          ^>=0.12.1
+constraints:   base-compat          ^>=0.13.0
 constraints:   intervals            ^>=0.9
 constraints:   machines             ^>=0.7
-constraints:   optparse-applicative ^>=0.16.1.0
+constraints:   optparse-applicative ^>=0.17.0.0
 constraints:   QuickCheck           ^>=2.14
-constraints:   semigroupoids        ^>=5.3
 constraints:   semigroups           ^>=0.20
 constraints:   transformers-compat  ^>=0.7.1
+constraints:   semigroupoids        ^>=5.3
 constraints:   hashable ^>=1.3
 constraints:   lens        ^>=5
 constraints:   profunctors ^>=5.6.1
@@ -44,18 +43,16 @@ packages:
     microstache
     OneTuple
     qc-instances
-    regex-applicative-text
     rere
+    regression-simple
     these/monad-chronicle
     these/semialign
     these/these
-    these/these-lens
     time-compat
     type-equality
 
 packages:      splitmix
 packages:
-    aeson-compat
     binary-instances
     confusing
     hkd
@@ -69,11 +66,9 @@ packages:
 
 packages:
     aeson-extra
-    base64-bytestring-type
     binary-tagged/binary-tagged
     binary-tagged/structured
     boring/boring
-    boring/boring-instances
     dec
     JuicyPixels-scale-dct
     kleene
@@ -90,5 +85,9 @@ packages:
     vec/vec-lens
 
 allow-newer:   Chart:semigroups
-allow-newer:   JuicyPixels:primitive
+allow-newer:   JuicyPixels-3.2.8.3:primitive
+allow-newer:   JuicyPixels-3.2.8.3:vector
+allow-newer:   lens:assoc
+allow-newer:   lens:strict
+allow-newer:   lens:these
 with-compiler: ghc-7.8.4

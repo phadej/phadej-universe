@@ -1,4 +1,3 @@
-allow-newer:   attoparsec-0.14.2:semigroups
 constraints:   binary           installed
 constraints:   bytestring       installed
 constraints:   containers       installed
@@ -9,16 +8,16 @@ constraints:   pretty           installed
 constraints:   process          installed
 constraints:   template-haskell installed
 constraints:   transformers installed
-constraints:   base-compat          ^>=0.12.1
+constraints:   base-compat          ^>=0.13.0
 constraints:   intervals            ^>=0.9
 constraints:   machines             ^>=0.7
-constraints:   optparse-applicative ^>=0.16.1.0
+constraints:   optparse-applicative ^>=0.17.0.0
 constraints:   QuickCheck           ^>=2.14
-constraints:   semigroupoids        ^>=5.3
 constraints:   semigroups           ^>=0.20
 constraints:   transformers-compat  ^>=0.7.1
+constraints:   semigroupoids        ^>=6
 constraints:   hashable ^>=1.4
-constraints:   lens        ^>=5.2
+constraints:   lens        ^>=5.2.1
 constraints:   profunctors ^>=5.6.1
 constraints:   constraints ^>=0.13
 constraints:   generics-sop ^>=0.5
@@ -43,18 +42,16 @@ packages:
     microstache
     OneTuple
     qc-instances
-    regex-applicative-text
     rere
+    regression-simple
     these/monad-chronicle
     these/semialign
     these/these
-    these/these-lens
     time-compat
     type-equality
 
 packages:      splitmix
 packages:
-    aeson-compat
     binary-instances
     confusing
     hkd
@@ -68,11 +65,9 @@ packages:
 
 packages:
     aeson-extra
-    base64-bytestring-type
     binary-tagged/binary-tagged
     binary-tagged/structured
     boring/boring
-    boring/boring-instances
     dec
     JuicyPixels-scale-dct
     kleene
@@ -89,6 +84,7 @@ packages:
     vec/vec-lens
 
 packages:
+    base64-bytestring-type
     bound-extras
     file-embed-lzma
     generic-lens-lite/generic-lens-lite
@@ -96,6 +92,7 @@ packages:
     generics-sop-lens
     insert-ordered-containers
     months
+    these/these-lens
     these/these-optics
     vec/ral-optics
     vec/vec-optics
@@ -112,5 +109,6 @@ packages:
     spdx
 
 allow-newer:   Chart:semigroups
-allow-newer:   JuicyPixels:primitive
+allow-newer:   JuicyPixels-3.2.8.3:primitive
+allow-newer:   JuicyPixels-3.2.8.3:vector
 with-compiler: ghc-8.8.4
