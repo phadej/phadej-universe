@@ -1,4 +1,3 @@
-allow-newer:   foldable1-classes-compat:semigroups
 constraints:   binary           installed
 constraints:   bytestring       installed
 constraints:   containers       installed

@@ -6,8 +6,12 @@ makefile:
   	cabal-deps */*.cabal */*/*.cabal
 
 if impl(ghc >=7.4)
-  -- https://github.com/haskell-compat/foldable1-classes-compat/issues/21
-  allow-newer: foldable1-classes-compat:semigroups
+  --allow-newer=quickcheck-instances:base
+  --allow-newer=these:base
+  --allow-newer=assoc:base
+  --allow-newer=uuid-types:template-haskell
+  --allow-newer=template-haskell
+
 
   -- installed
   constraints: binary           installed
