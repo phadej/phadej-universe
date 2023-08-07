@@ -96,10 +96,6 @@ if impl(ghc >=7.4)
     assoc
     binary-orphans
     crypt-sha512
-    cryptohash-md5
-    cryptohash-sha1
-    cryptohash-sha256
-    cryptohash-sha512
     dlist-nonempty
     edit-distance
     functor-classes-compat

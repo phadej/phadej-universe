@@ -142,18 +142,6 @@
 [submodule "generic-lens-lite"]
 	path = generic-lens-lite
 	url = git@github.com:phadej/generic-lens-lite.git
-[submodule "cryptohash-md5"]
-	path = cryptohash-md5
-	url = git@github.com:haskell-hvr/cryptohash-md5.git
-[submodule "cryptohash-sha1"]
-	path = cryptohash-sha1
-	url = git@github.com:haskell-hvr/cryptohash-sha1.git
-[submodule "cryptohash-sha256"]
-	path = cryptohash-sha256
-	url = git@github.com:haskell-hvr/cryptohash-sha256.git
-[submodule "cryptohash-sha512"]
-	path = cryptohash-sha512
-	url = git@github.com:haskell-hvr/cryptohash-sha512.git
 [submodule "lzma"]
 	path = lzma
 	url = git@github.com:haskell-hvr/lzma.git
