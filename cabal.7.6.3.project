@@ -49,10 +49,8 @@ packages:
     hkd
     lattices
     lukko
-    postgresql-simple
     postgresql-simple-url
     step-function
-    time-parsers
     topograph
 
 with-compiler: ghc-7.6.3

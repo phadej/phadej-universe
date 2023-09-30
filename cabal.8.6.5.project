@@ -53,10 +53,8 @@ packages:
     hkd
     lattices
     lukko
-    postgresql-simple
     postgresql-simple-url
     step-function
-    time-parsers
     topograph
 
 packages:
@@ -80,7 +78,6 @@ packages:
     vec/vec-lens
 
 packages:
-    base64-bytestring-type
     bound-extras
     file-embed-lzma
     generic-lens-lite/generic-lens-lite
@@ -88,6 +85,7 @@ packages:
     generics-sop-lens
     insert-ordered-containers
     months
+    time-parsers
     these/these-lens
     these/these-optics
     vec/ral-optics
@@ -98,8 +96,10 @@ packages:
     zinza
     these/semialign-indexed
 
+packages:      base64-bytestring-type
 packages:
     postgresql-libpq
+    postgresql-simple
     skew-list
     some
     spdx

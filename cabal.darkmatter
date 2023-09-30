@@ -126,10 +126,8 @@ if impl(ghc >=7.6)
     hkd
     lattices
     lukko
-    postgresql-simple
     postgresql-simple-url
     step-function
-    time-parsers
     topograph
 
 if impl(ghc >=7.8)
@@ -160,7 +158,6 @@ if impl(ghc >=7.8)
 
 if impl(ghc >=8.0)
   packages:
-    base64-bytestring-type
     bound-extras
     file-embed-lzma
     generic-lens-lite/generic-lens-lite
@@ -168,6 +165,7 @@ if impl(ghc >=8.0)
     generics-sop-lens
     insert-ordered-containers
     months
+    time-parsers
     these/these-lens
     these/these-optics
     vec/ral-optics
@@ -179,9 +177,14 @@ if impl(ghc >=8.2)
     zinza
     these/semialign-indexed
 
+if impl(ghc >=8.4)
+  packages:
+    base64-bytestring-type
+
 if impl(ghc >=8.6)
   packages:
     postgresql-libpq
+    postgresql-simple
     skew-list
     some
     spdx
