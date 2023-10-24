@@ -11,7 +11,7 @@ constraints:   transformers installed
 constraints:   base-compat          ^>=0.13.0
 constraints:   intervals            ^>=0.9
 constraints:   machines             ^>=0.7
-constraints:   optparse-applicative ^>=0.17.0.0
+constraints:   optparse-applicative ^>=0.18.1.0
 constraints:   QuickCheck           ^>=2.14
 constraints:   semigroups           ^>=0.20
 constraints:   transformers-compat  ^>=0.7.1
@@ -23,8 +23,7 @@ constraints:   constraints ^>=0.13
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
 constraints:   optics ^>=0.4
-constraints:   attoparsec           ^>=0.14.1
-constraints:   aeson                ^>=2.1.0.0
+constraints:   aeson                ^>=2.2.1.0
 packages:
     assoc
     binary-orphans
@@ -94,7 +93,6 @@ packages:
 packages:
     aeson-optics
     zinza
-    these/semialign-indexed
 
 packages:      base64-bytestring-type
 allow-newer:   Chart:semigroups

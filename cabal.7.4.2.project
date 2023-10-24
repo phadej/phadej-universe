@@ -10,7 +10,7 @@ constraints:   template-haskell installed
 constraints:   base-compat          ^>=0.13.0
 constraints:   intervals            ^>=0.9
 constraints:   machines             ^>=0.7
-constraints:   optparse-applicative ^>=0.17.0.0
+constraints:   optparse-applicative ^>=0.18.1.0
 constraints:   QuickCheck           ^>=2.14
 constraints:   semigroups           ^>=0.20
 constraints:   transformers-compat  ^>=0.7.1
