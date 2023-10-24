@@ -78,7 +78,10 @@ if impl(ghc >=7.4)
   if impl(ghc >=7.8 && <7.9)
     constraints: cookie ==0.4.3
 
-  if impl(ghc >=8.0)
+  if impl(ghc >=8.2)
+    constraints: aeson                ^>=2.2.1.0
+
+  if impl(ghc <8.2 && >=8.0)
     constraints: attoparsec           ^>=0.14.1
     constraints: aeson                ^>=2.1.0.0
 
@@ -208,9 +211,30 @@ if impl(ghc >=7.8 && <8.0)
   allow-newer: lens:these
 
 if impl(ghc >=9.6)
-  allow-newer: recursion-schemes:template-haskell
-  allow-newer: cryptohash-sha512:base
   allow-newer: fft:transformers
+
+if impl(ghc >=9.8)
+  -- https://github.com/Twinside/Juicy.Pixels/pull/221
+  allow-newer: JuicyPixels-3.3.8:bytestring
+  allow-newer: JuicyPixels-3.3.8:deepseq
+
+  -- https://github.com/well-typed/optics/issues/498
+  allow-newer: optics-extra-0.4.2.1:bytestring
+  allow-newer: optics-extra-0.4.2.1:text
+
+  -- https://github.com/well-typed/cborg/issues/327
+  allow-newer: serialise-0.2.6.0:base
+  allow-newer: serialise-0.2.6.0:bytestring
+  allow-newer: serialise-0.2.6.0:ghc-prim
+  allow-newer: serialise-0.2.6.0:primitive
+  allow-newer: serialise-0.2.6.0:text
+
+  allow-newer: cborg-0.2.9.0:base
+  allow-newer: cborg-0.2.9.0:bytestring
+  allow-newer: cborg-0.2.9.0:deepseq
+  allow-newer: cborg-0.2.9.0:ghc-prim
+  allow-newer: cborg-0.2.9.0:primitive
+  allow-newer: cborg-0.2.9.0:text
 
 ------------------------------------------------------------------------
 -- head.hackage

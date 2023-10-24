@@ -23,8 +23,7 @@ constraints:   constraints ^>=0.13
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
 constraints:   optics ^>=0.4
-constraints:   attoparsec           ^>=0.14.1
-constraints:   aeson                ^>=2.1.0.0
+constraints:   aeson                ^>=2.2.1.0
 constraints:   network-uri >=0.2.4.0
 packages:
     assoc

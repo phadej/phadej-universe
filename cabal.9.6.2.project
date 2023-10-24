@@ -23,8 +23,7 @@ constraints:   constraints ^>=0.13
 constraints:   generics-sop ^>=0.5
 constraints:   network ^>=3.1
 constraints:   optics ^>=0.4
-constraints:   attoparsec           ^>=0.14.1
-constraints:   aeson                ^>=2.1.0.0
+constraints:   aeson                ^>=2.2.1.0
 constraints:   network-uri >=0.2.4.0
 packages:
     assoc
@@ -109,7 +108,5 @@ packages:      th-letrec
 allow-newer:   Chart:semigroups
 allow-newer:   JuicyPixels-3.2.8.3:primitive
 allow-newer:   JuicyPixels-3.2.8.3:vector
-allow-newer:   recursion-schemes:template-haskell
-allow-newer:   cryptohash-sha512:base
 allow-newer:   fft:transformers
 with-compiler: ghc-9.6.2
